@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Personal portfolio of Yanyan" />
+    <meta name="description" content="Personal portfolio of Christian" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-    <title>Yanyan - Web Developer</title>
+    <title>Christian - Computer Engineering Student</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/styles/style.css"></script>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
 <body>
     <!-- Header -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50 hidden md:block transition-all duration-300">
@@ -49,38 +50,13 @@
             }
         });
     </script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 
     <section>
         <!-- Hero -->
         <div id="hero" class="relative isolate overflow-hidden bg-white py-24 md:h-screen" style="--accent-color: #1d4ed8">
             <div class="absolute inset-0 -z-10" style="background: radial-gradient(ellipse 800px 1200px at 0% 0%, #1d4ed840 0%, #1d4ed825 20%, #1d4ed810 40%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.8) 90%, white 100%)">
             </div>
-            <svg aria-hidden="true" class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]">
-                <defs>
-                    <pattern x="50%" y="-1" id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" patternUnits="userSpaceOnUse">
-                        <path d="M.5 200V.5H200" fill="none"></path>
-                    </pattern>
-                    <pattern id="programming-symbols" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
-                        <text x="50" y="50" fill="#1d4ed8" font-family="monospace" font-size="24" transform="rotate(-15)">&lt;/&gt;</text>
-                        <text x="150" y="100" fill="#1d4ed8" font-family="monospace" font-size="20" transform="rotate(10)">{}</text>
-                        <text x="250" y="80" fill="#1d4ed8" font-family="monospace" font-size="18" transform="rotate(-5)">=&gt;</text>
-                        <text x="100" y="200" fill="#1d4ed8" font-family="monospace" font-size="22" transform="rotate(15)">[]</text>
-                        <text x="300" y="180" fill="#1d4ed8" font-family="monospace" font-size="20" transform="rotate(-10)">&lt;&gt;</text>
-                        <text x="200" y="250" fill="#1d4ed8" font-family="monospace" font-size="24" transform="rotate(5)">()</text>
-                        <text x="50" y="320" fill="#1d4ed8" font-family="monospace" font-size="18" transform="rotate(-8)">::</text>
-                        <text x="350" y="300" fill="#1d4ed8" font-family="monospace" font-size="22" transform="rotate(12)">==</text>
-                        <text x="150" y="350" fill="#1d4ed8" font-family="monospace" font-size="20" transform="rotate(-15)">++</text>
-                        <text x="250" y="370" fill="#1d4ed8" font-family="monospace" font-size="24" transform="rotate(8)">;</text>
-                    </pattern>
-                </defs>
-                <rect fill="url(#programming-symbols)" width="100%" height="100%" opacity="0.2"></rect>
-                <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%" stroke-width="0"></rect>
-            </svg>
+            <!-- Removed the programming symbols SVG to avoid clutter and keep design simple -->
             <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
                 <div>
                     <h2 class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in">
@@ -90,7 +66,7 @@
                         I'm <span style="color: #1d4ed8">Christian</span>
                     </h1>
                     <p class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400">
-                        Computer Engineer Student
+                        Computer Engineering Student
                     </p>
                 </div>
             </div>
@@ -102,7 +78,7 @@
                         <path d="M3 7l9 6l9 -6" />
                     </svg>
                 </a>
-                <a href="www.linkedin.com/in/christian-narvaez-960597240" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="transition-colors duration-300 hover:text-[var(--accent-color)]">
+                <a href="https://www.linkedin.com/in/christian-narvaez-960597240" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="transition-colors duration-300 hover:text-[var(--accent-color)]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M8 11v5" />
@@ -127,31 +103,6 @@
                 </a>
             </div>
         </div>
-        <style>
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-            .animate-fade-in {
-                animation: fadeIn 0.8s ease-out forwards;
-                opacity: 0;
-            }
-            .animation-delay-200 {
-                animation-delay: 0.2s;
-            }
-            .animation-delay-400 {
-                animation-delay: 0.4s;
-            }
-            .animation-delay-600 {
-                animation-delay: 0.6s;
-            }
-        </style>
 
         <!-- About -->
         <section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
@@ -166,7 +117,7 @@
                     </div>
                     <div class="lg:col-span-8 space-y-8">
                         <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
-                            I'm a passionate web developer with experience in HTML, CSS, JavaScript, and Python. I love building user-friendly, responsive websites and tackling complex problems. My skills include front-end development, UI/UX design, and data visualization.
+                            I'm a passionate computer engineering student with interests in web development, software engineering, and hardware-software integration. I enjoy building responsive applications and exploring new technologies.
                         </p>
                         <div class="pt-4">
                             <div class="flex flex-wrap gap-3">
@@ -440,7 +391,7 @@
                                 <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                                     <div>
                                         <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
-                                            Bachelor of Science in Computer Science
+                                            Bachelor of Science in Computer Engineering
                                         </h3>
                                         <p class="text-base sm:text-lg" style="color: #1d4ed8">
                                             University Name
@@ -519,20 +470,20 @@
             <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
                 <div class="flex flex-col gap-4">
                     <h3 class="text-2xl font-bold text-gray-800">
-                        Yanyan
+                        Christian
                     </h3>
                     <p class="text-base text-gray-600">
-                        Web Developer
+                        Computer Engineering Student
                     </p>
                     <div class="flex gap-x-6">
-                        <a href="mailto:yanyan@example.com" aria-label="Email" class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]" style="--accent-color: #1d4ed8">
+                        <a href="mailto:narvaez.christian@marsu.edu.ph" aria-label="Email" class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]" style="--accent-color: #1d4ed8">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
                                 <path d="M3 7l9 6l9 -6"></path>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/yanyan69" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]" style="--accent-color: #1d4ed8">
+                        <a href="https://www.linkedin.com/in/christian-narvaez-960597240" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]" style="--accent-color: #1d4ed8">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M8 11v5"></path>
@@ -573,7 +524,7 @@
                         <a href="#education" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Education</a>
                     </nav>
                     <p class="text-sm text-gray-500">
-                        © 2025 Yanyan. All rights reserved.
+                        © 2025 Christian. All rights reserved.
                     </p>
                 </div>
             </div>
